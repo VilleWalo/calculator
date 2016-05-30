@@ -17,6 +17,8 @@ var divide = getEl("divide");
 var sqrt = getEl("sqrt");
 var dot = getEl("dot");
 var result = getEl("result");
+var smile = getEl("smile");
+var gomer = getEl("gomer");
 
 var clearDisplay = function(){
 		display.innerHTML = String(display.innerHTML);
@@ -124,6 +126,13 @@ result.addEventListener("click", function(event){
 		clearStatus = true;
 	});
 
+smile.addEventListener("click", function(event){
+		var doh = new Audio('doh.wav').play();
+		gomer.style.display = "block";
+		setTimeout(function(){
+			gomer.style.display = "none";
+		}, 100);	
+	});
 /*-----------------------------------------------------------------------------------*/
 
 display.innerHTML = "";

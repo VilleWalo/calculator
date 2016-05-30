@@ -13,6 +13,7 @@ span{
 	padding: 20px;
 }
 .container{
+	position: relative;
 	width: 280px;
 	min-height: 450px;
 	background-color: #796867;
@@ -77,4 +78,12 @@ span{
 	height: 10px;
 	border-radius: 50%;
 	background-color: #d3dce5;
+}
+#gomer{
+	position: absolute;
+	top: 0px;
+	left: -50px;
+	transform: rotate(-70deg);
+	background-image: url(homer.png);
+	display: none;
 }
